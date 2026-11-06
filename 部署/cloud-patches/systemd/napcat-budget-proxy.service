@@ -1,0 +1,17 @@
+[Unit]
+Description=NapCat daily message budget proxy
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/<user>/napcat
+ExecStart=/usr/bin/node /home/<user>/napcat/napcat-budget-proxy.js
+Restart=always
+RestartSec=3
+StandardOutput=append:/home/<user>/napcat/budget-proxy.log
+StandardError=append:/home/<user>/napcat/budget-proxy.log
+
+[Install]
+WantedBy=multi-user.target

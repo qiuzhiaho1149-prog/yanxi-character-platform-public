@@ -1,0 +1,18 @@
+[Unit]
+Description=DSH Yanxi Cloud
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/<user>
+EnvironmentFile=/etc/dsh-yanxi.env
+ExecStart=/usr/bin/dsh --profile yanxi --host 127.0.0.1 --port 8790 --no-open
+Restart=always
+RestartSec=5
+StandardOutput=append:/home/<user>/dsh-yanxi.log
+StandardError=append:/home/<user>/dsh-yanxi.log
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,26 @@
+{
+  "name": "dsh-profile-yanxi",
+  "private": true,
+  "dependencies": {
+    "dsh-fish-mood": "0.1.0",
+    "dsh-fish-wiki": "file:/tmp/dsh-fish-wiki-0.1.0.tgz",
+    "dsh-qq-onebot": "1.2.8",
+    "dsh-yanxi": "file:/tmp/dsh-yanxi-0.1.0.tgz",
+    "dsh-yanxi-life": "file:/tmp/dsh-yanxi-life-0.1.0.tgz",
+    "dsh-yanxi-vision": "file:/tmp/dsh-yanxi-vision-0.1.0.tgz"
+  },
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "dsh-qq-onebot",
+        "dsh-fish-mood",
+        "dsh-fish-wiki",
+        "dsh-yanxi-life",
+        "dsh-yanxi-vision",
+        "dsh-yanxi"
+      ]
+    }
+  }
+}

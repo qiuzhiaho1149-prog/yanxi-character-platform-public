@@ -1,0 +1,16 @@
+{
+  "qq": {
+    "account": "<YANXI_QQ>",
+    "mode": "onebot",
+    "onebotWs": "ws://127.0.0.1:3002",
+    "private": true,
+    "groups": ["<GROUP_ID>"],
+    "requireMention": true,
+    "groupWakeProbability": 0.05
+  },
+  "bilibili": {
+    "enabled": true,
+    "browsePerDay": 4,
+    "comment": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "dsh-yanxi-vision",
+  "version": "0.1.0",
+  "description": "嫣汐的视觉工具：用 DeepSeek Flash 看本机图片/表情包。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": { ".": "./lib/index.js" },
+  "files": ["lib", "cordis.patch.yml", "README.md"],
+  "keywords": ["dsh", "dsh-plugin", "dsh-yanxi", "vision"],
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": { "test": "node --test" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "compatibility": { "dsh": ">=0.2.0-rc.1 <0.3.0-0" }
+  }
+}

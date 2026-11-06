@@ -1,0 +1,17 @@
+[Unit]
+Description=NapCat owner auto-accept gate
+After=network-online.target docker.service napcat.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/<user>/napcat
+ExecStart=/usr/bin/node /home/<user>/napcat/owner-gate.js
+Restart=always
+RestartSec=3
+StandardOutput=append:/home/<user>/napcat/owner-gate.log
+StandardError=append:/home/<user>/napcat/owner-gate.log
+
+[Install]
+WantedBy=multi-user.target

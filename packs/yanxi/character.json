@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "yanxi",
+  "name": "嫣汐",
+  "version": "0.1.0",
+  "status": "experimental",
+  "runtime": "dsh-yanxi",
+  "dataRoot": "/var/lib/yanxi/characters/yanxi",
+  "seed": "seed.md",
+  "behavior": "behavior.md",
+  "windows": "windows.json",
+  "tools": "tools.json",
+  "social": "social.json",
+  "notes": "Phase 1.5 pack scaffold. 当前云端仍由 profile prompt 覆盖驱动，尚未由 runtime 加载本 pack。",
+  "assets": {
+    "referenceVoice": "assets/yanxi-reference.wav",
+    "voiceId": "yanxiClone04",
+    "note": "参考音频按语气切片；原始 217 条语音包不随仓库发布",
+    "voiceProfiles": {
+      "neutral": {
+        "voiceId": "yanxiClone04",
+        "reference": "assets/yanxi-reference.wav"
+      },
+      "bright": {
+        "voiceId": "yanxiClone05",
+        "reference": "assets/profiles/bright.wav"
+      },
+      "hurt": {
+        "voiceId": "yanxiClone06",
+        "reference": "assets/profiles/hurt.wav"
+      },
+      "soft": {
+        "voiceId": "yanxiClone07",
+        "reference": "assets/profiles/soft.wav"
+      }
+    }
+  }
+}

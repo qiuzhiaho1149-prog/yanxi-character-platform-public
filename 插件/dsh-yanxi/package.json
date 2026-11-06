@@ -1,0 +1,58 @@
+{
+  "name": "dsh-yanxi",
+  "version": "0.1.0",
+  "description": "嫣汐 · 会自己长大的角色成长引擎：没有人格设置面板，通过事件流长出她自己；状态库在 ~/.dsh-yanxi。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "LICENSE",
+    "lib",
+    "media",
+    "cordis.patch.yml",
+    "README.md",
+    "AGENTS.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dsh": ">=0.2.0-rc.1 <0.3.0-0",
+      "dshReleases": {
+        "0.2.1-rc.2": "compatible",
+        "0.2.1-rc.5": "unknown",
+        "0.2.1-rc.3": "compatible"
+      },
+      "profiles": [
+        "desktop",
+        "web",
+        "headless"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "agent",
+    "pet"
+  ],
+  "author": "local fork of dsh-fish",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.0-rc.1 <0.3.0-0"
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "devDependencies": {}
+}

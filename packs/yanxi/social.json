@@ -1,0 +1,13 @@
+{
+  "ownerIds": ["<OWNER_QQ>"],
+  "ownerLabel": "主人",
+  "friendPolicy": {
+    "acceptPerDay": 5,
+    "maxFriends": 200,
+    "status": "not_implemented"
+  },
+  "groupPolicy": {
+    "mode": "allowlist",
+    "groups": ["<GROUP_ID>"]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "allow": [
+    "life_list",
+    "life_read",
+    "life_write",
+    "life_mkdir",
+    "see_image",
+    "qq_send_voice",
+    "mood_now",
+    "mood_feel",
+    "yanxi_recall",
+    "yanxi_commit",
+    "yanxi_look",
+    "yanxi_watch",
+    "yanxi_speak",
+    "yanxi_diary",
+    "wiki_look"
+  ],
+  "deny": [
+    "shell",
+    "read_system",
+    "read_other_character"
+  ]
+}

@@ -1,0 +1,42 @@
+# macOS / editor
+.DS_Store
+*.swp
+*.log
+
+# dependencies / build
+node_modules/
+__pycache__/
+.pytest_cache/
+*.zstd
+*.tgz
+
+# secrets / credentials / generated media
+.env
+*.env
+*.pem
+*.key
+secrets/
+部署/qq-login-*.png
+部署/*.mp3
+*.silk
+*.amr
+
+# 历史/备份/上游仓库（不进入当前仓库）
+backups/
+归档/
+repos/
+验证截图/
+穿搭助手角色设计/
+superdafeiyu/
+问题排查-大肥鱼看视频-验证图.png
+
+# 运行时
+*.pid
+*.tmp
+
+# 私有部署实例值
+部署/private/
+*.local.md
+
+# 私有实例标识
+scripts/sensitive-denylist.local

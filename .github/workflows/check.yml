@@ -1,0 +1,16 @@
+name: sanitization-and-tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sensitive content scan
+        run: bash scripts/check-sensitive.sh
+      - name: Plugin tests
+        working-directory: 插件/dsh-yanxi
+        run: node --test
